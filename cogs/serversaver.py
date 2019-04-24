@@ -44,7 +44,7 @@ class ServerSaver(commands.Cog):
         while True:
             await self.bot.change_presence(
                 activity=discord.Activity(
-                    type=discord.ActivityType.listening, 
+                    type=discord.ActivityType.listening,
                     name=f'{len(self.bot.guilds)} guilds!'))
             for guild in self.bot.guilds:
                 try:
@@ -55,15 +55,14 @@ class ServerSaver(commands.Cog):
 
     @asyncio.coroutine
     async def copy(self, guild):
-        data = {
-            "roles": {},
-            "bans": [],
-            "channels": {},
-            "categories": {},
-            "voice_channels": {},
-            'messages': {},
-            'members': [],
-            'memberRoles': {}}
+        data = {"bans": [],
+                "roles": {},
+                'members': [],
+                'messages': {},
+                "channels": {},
+                "categories": {},
+                'member_roles': {},
+                "voice_channels": {}}
 
         for role in guild.roles:
             data["roles"][role.name] = {}
@@ -145,7 +144,7 @@ class ServerSaver(commands.Cog):
             roleList = []
             for role in member.roles:
                 roleList.append(role.name)
-            data['memberRoles'][member.id] = roleList
+            data['member_roles'][member.id] = roleList
 
         if (os.path.isfile(filename)):
             with open(filename, 'w') as file:
@@ -371,8 +370,8 @@ class ServerSaver(commands.Cog):
         await ctx.send("Restoring roles!")
         for member in ctx.guild.members:
             roleArray = []
-            if str(member.id) in backup['memberRoles']:
-                for role in backup['memberRoles'][str(member.id)]:
+            if str(member.id) in backup['member_roles']:
+                for role in backup['member_roles'][str(member.id)]:
                     putRole = discord.utils.get(ctx.guild.roles, name=role)
                     if putRole.name == "@everyone":
                         continue
