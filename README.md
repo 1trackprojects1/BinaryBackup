@@ -47,12 +47,8 @@ Edit the `'.'`, to the prefix you'd like, make sure it's contained between `''` 
 Now we are going to install the pip modules required for this bot to work:
 
 We moved the requirements.txt to our new folder, so what we do, is simply open a terminal in that folder, and type the following:
-If you're on Linux:
-    `pip install -r requirements.txt`
-If you're on windows:
-    `py -m pip install -r requirements.txt`
-    or
-    `python -m pip install -r requirements.txt`
+* Linux: `pip install -r requirements.txt`
+* Windows: `py -m pip install -r requirements.txt`
 
 Now we simply start backupbot.py, and invite the bot using the link that shows up!
 
