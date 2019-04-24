@@ -1,12 +1,11 @@
 # BinaryBackup #
-=============
-A discord bot created to completely back up your discord servers, including messages, that invites your members back afterwards.
-=============
+
+###A discord bot created to completely back up your discord servers, including messages, that invites your members back afterwards.###
 
 You can either invite this bot to your discord servers, or host it yourself.
 ## Invite the bot ##
-[Named Link](https://discordapp.com/oauth2/authorize?client_id=535811461532876823&scope=bot "click here")
-=============
+[Click here](https://discordapp.com/oauth2/authorize?client_id=535811461532876823&scope=bot)
+
 ## Host it yourself ##
 First clone the repository
 `git clone https://github.com/Yuhanun/BinaryBackup.git`
@@ -56,16 +55,14 @@ If you're on windows:
     `python -m pip install -r requirements.txt`
 
 Now we simply start backupbot.py, and invite the bot using the link that shows up!
-=============
+
 ## Feel free to pull request any changes / improvements you make :) ##
-=============
+
 # License #
-=============
-This project is licensed under the MIT License - see the [Named Link](https://github.com/Yuhanun/BinaryBackup/blob/master/LICENSE LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Yuhanun/BinaryBackup/blob/master/LICENSE) file for details
 
 #Acknowledgments#
-=============
-Thank you to anyone whose code was used.
+Thanks to anyone whose code was used.
 
 Buy me a coffee ;) (BTC)
 32dcJ31dsxj8BMD5oD3mWKTDFSzpFHuHP1
