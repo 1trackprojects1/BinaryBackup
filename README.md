@@ -57,8 +57,8 @@ Now we simply start backupbot.py, and invite the bot using the link that shows u
 # License #
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/Yuhanun/BinaryBackup/blob/master/LICENSE) file for details
 
-#Acknowledgments#
+# Acknowledgments #
 Thanks to anyone whose code was used.
 
-Buy me a coffee ;) (BTC)
+### Buy me a coffee ;) (BTC) ###
 32dcJ31dsxj8BMD5oD3mWKTDFSzpFHuHP1
