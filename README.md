@@ -1,6 +1,6 @@
 # BinaryBackup #
 
-###A discord bot created to completely back up your discord servers, including messages, that invites your members back afterwards.###
+### A discord bot created to completely back up your discord servers, including messages, that invites your members back afterwards. ###
 
 You can either invite this bot to your discord servers, or host it yourself.
 ## Invite the bot ##
