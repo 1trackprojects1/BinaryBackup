@@ -42,8 +42,10 @@ class ServerSaver(commands.Cog):
     async def periodic_copy(self):
         await self.bot.wait_until_ready()
         while True:
-            guildCount = str(len(self.bot.guilds))
-            await self.bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=f'{guildCount} guilds!'))
+            await self.bot.change_presence(
+                activity=discord.Activity(
+                    type=discord.ActivityType.listening, 
+                    name=f'{len(self.bot.guilds)} guilds!'))
             for guild in self.bot.guilds:
                 try:
                     await self.copy(guild)
