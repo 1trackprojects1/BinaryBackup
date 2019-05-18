@@ -50,7 +50,7 @@ class ServerSaver(commands.Cog):
                 try:
                     await self.copy(guild)
                 except Exception as E:
-                    await (guild.system_channel or random.choice(guild.channels)).send(f"Failed to back up guild:\n{E}")
+                    await (guild.system_channel or random.choice(guild.text_channels)).send(f"Failed to back up guild:\n{E}")
             await asyncio.sleep(1800)
 
     @asyncio.coroutine
