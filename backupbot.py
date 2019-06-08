@@ -25,7 +25,6 @@ async def on_ready():
     print(discord.utils.oauth_url(bot.user.id))
 
 
-
 errorhandler.setup(bot)
 helpcommand.setup(bot)
 management.setup(bot)
